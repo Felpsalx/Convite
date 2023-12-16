@@ -8,9 +8,7 @@ function abrir(){
     }else{
         btn.innerText = "Abrir"
     }
-}
-
-const dataEvent = new Date ("Dec 28, 2023 23:00:00");
+    const dataEvent = new Date ("Dec 28, 2023 23:00:00");
 
 const timeStampEvent = dataEvent.getTime();
 
@@ -41,3 +39,5 @@ const contaHoras = setInterval(()=>{
         document.getElementById('count').innerHTML = "Evento Expirado";
     }
 }, 1000) 
+}
+
