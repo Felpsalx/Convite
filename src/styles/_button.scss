@@ -1,0 +1,19 @@
+.convite__details__btn{
+    padding: 20px;
+    border-radius: 4px;
+    margin: 0 25px;
+    cursor: pointer;
+    border: none;
+    background-color: purple;
+    color: #fff;
+    @media (max-width: 640px){
+        max-width: 220px;
+        width: 100%;
+    }
+    @media (max-width: 1024px){
+        padding: 24px;
+    }
+    &:hover{
+        background-color: rgb(68, 9, 68);
+    }
+}

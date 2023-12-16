@@ -1,0 +1,122 @@
+$color1: aliceblue;
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    @media (max-width: 640px){
+        max-width: 640px;
+        width: 100%;
+       text-align: center;
+    }
+    @media (max-width: 1024px){
+        max-width: 1024px;
+        text-align: center;
+    }
+}
+
+.convite{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+
+    &__title{
+        font-family: Rubik Bubbles;
+        color: rgb(13, 139, 13);
+        line-height: 25px;
+        letter-spacing: 8px;
+        font-weight: bold;
+        font-size: 24px;
+        @media (max-width: 640px){
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 20px;
+        }
+        @media (max-width: 1023px){
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 4px;
+        }
+    }
+    &__details img{
+        width: 120px;
+        background-color: $color1;
+    }
+    &__details{
+        display: flex;
+        align-items: center;
+        background-color: $color1;
+        padding: 25px;
+        margin-top: 45px;
+        border-radius: 28px;
+        box-shadow: 3px 3px 4px #000;
+        overflow: hidden;
+        @media (max-width: 640px){
+        flex-direction: column;
+        }
+        &__text{
+            background-color: $color1;
+            display: none;
+            
+            img{
+                display: flex;
+  
+                margin: 0 auto;
+            }
+            p{
+                background-color: $color1;
+                span{
+                    background-color: $color1;
+                }
+            }
+            &-is--active{
+                ul{
+                    max-width: 400px;
+                    width: 100%;
+                    margin: 15px auto;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: $color1;
+                    transition: all .5s;
+                    li{
+                        background-color: $color1;
+                        h4{
+                            color: blue;
+                            font-size: 21px;
+                            background-color: $color1;
+                            @media (max-width: 640px){
+                                margin-top: 24px;
+                                font-size: 18px;
+                                margin-bottom: 8px;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                        font-size: 19px;
+                        @media (max-width: 640px){
+                            margin-right: 20px;
+                        }
+
+                    }
+                    @media (max-width: 640px){
+                            flex-direction: column;
+                        }
+                }
+                
+                margin-left: 25px;
+                display: block;
+            }
+        }
+    }
+
+    
+}
+
