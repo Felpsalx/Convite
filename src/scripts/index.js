@@ -1,5 +1,5 @@
 let conviteOpen = document.querySelector(".convite__details__text")
-const btn = document.querySelector("button")
+const btn = document.querySelector(".convite__details__btn")
 
 function abrir(){
     conviteOpen.classList.toggle("convite__details__text-is--active")
