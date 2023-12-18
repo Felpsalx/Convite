@@ -1,7 +1,7 @@
 let conviteOpen = document.querySelector(".convite__details__text")
 const btn = document.querySelector(".convite__details__btn")
 
-function abrir(){
+btn.addEventListener("click", ()=>{
     conviteOpen.classList.toggle("convite__details__text-is--active")
     if(conviteOpen.classList.contains("convite__details__text-is--active") ){
         btn.innerText = "Fechar"
@@ -39,5 +39,7 @@ function abrir(){
         document.getElementById('count').innerHTML = "Evento Expirado";
     }
     }, 1000) 
-}
+})
+    
+
 
